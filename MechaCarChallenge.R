@@ -4,10 +4,10 @@ library(dplyr)
 df <- read.csv(file = 'MechaCar_mpg.csv')
 
 #Perform linear regression on all variables
-lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg, df)
+lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, df)
 
 #Print summary of linear regression
-summary(lm(vehicle_length ~ vehicle_weight + spoiler_angle + ground_clearance + AWD + mpg, df))
+summary(lm(mpg ~ vehicle_length + vehicle_weight + spoiler_angle + ground_clearance + AWD, df))
 
 #End Deliverable 1
 # ----------------------------------------------------------
